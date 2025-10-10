@@ -1,3 +1,27 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">DroidTest</string>
+    <string name="header">This is my first App</string>
+    <string name="Name">Please Enter your Name</string>
+    <string name="AutofillName">Your Name</string>
+    <string name="Email">Please Enter your Email</string>
+    <string name="AutofillEmail">youremail@gmail.com</string>
+    <string name="Choice">Do you consider yourself a dog person?</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="Maybe">Maybe</string>
+    <string name="Enquiry">Where do you hear about us?</string>
+    <string name="Instagram">Instagram</string>
+    <string name="Facebook">Facebook</string>
+    <string name="WebSurfing">WebSurfing</string>
+    <string name="Youtube">Youtube</string>
+    <string name="College">College</string>
+    <string name="Twitter">Twitter</string>
+    <string name="Others">Others</string>
+    <string name="images">Which of these images is a Dog?</string>
+    <string name="it_s_a_dog">It\'s a dog</string>
+    <string name="_1">1</string>
+    <string name="it_s_a_cat">It\'s a cat</string>
+    <string name="_2">2</string>
+    <string name="Conditions">This is just a test app to work with various elements in the android studio please check the box below to accept the Terms and Condition</string>
+    <string name="submit">Submit</string>
 </resources>
