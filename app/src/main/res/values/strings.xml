@@ -9,7 +9,7 @@
     <string name="Yes">Yes</string>
     <string name="No">No</string>
     <string name="Maybe">Maybe</string>
-    <string name="Enquiry">Where do you hear about us?</string>
+    <string name="Enquiry">Where did you hear about us?</string>
     <string name="Instagram">Instagram</string>
     <string name="Facebook">Facebook</string>
     <string name="WebSurfing">WebSurfing</string>
@@ -17,7 +17,7 @@
     <string name="College">College</string>
     <string name="Twitter">Twitter</string>
     <string name="Others">Others</string>
-    <string name="images">Which of these images is a Dog?</string>
+    <string name="images">Which of these image is a Dog?</string>
     <string name="it_s_a_dog">It\'s a dog</string>
     <string name="_1">1</string>
     <string name="it_s_a_cat">It\'s a cat</string>
