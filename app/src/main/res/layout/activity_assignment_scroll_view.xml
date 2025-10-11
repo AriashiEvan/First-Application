@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".Assignment_Scroll_View">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -18,7 +18,6 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/header"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -32,8 +31,7 @@
             android:gravity="start"
             android:text="@string/Name"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/top"
-            />
+            app:layout_constraintTop_toBottomOf="@id/top"/>
 
         <EditText
             android:id="@+id/NameFill"
@@ -44,6 +42,8 @@
             android:autofillHints="@string/AutofillName"
             android:layout_marginHorizontal="10dp"
             android:gravity="start"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/top_end"/>
 
         <TextView
@@ -66,7 +66,8 @@
             android:hint="@string/AutofillEmail"
             android:inputType="textEmailAddress"
             android:textColorHint="#8D6E63"
-            app:layout_constraintTop_toBottomOf="@id/email" />
+            app:layout_constraintTop_toBottomOf="@id/email"
+            app:layout_constraintStart_toStartOf="parent"/>
 
         <TextView
             android:id="@+id/Preferance"
@@ -80,10 +81,11 @@
 
         <RadioGroup
             android:id="@+id/radio"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@id/Preferance">
+            app:layout_constraintTop_toBottomOf="@id/Preferance"
+            app:layout_constraintStart_toStartOf="parent">
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -102,52 +104,74 @@
                 android:text="@string/Maybe"
                 android:layout_margin="2dp"
                 android:padding="10dp"/>
+
         </RadioGroup>
 
         <TextView
             android:id="@+id/checkboxes"
-            android:layout_margin="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/Enquiry"
             app:layout_constraintTop_toBottomOf="@id/radio"
-            android:text="@string/Enquiry"/>
+            app:layout_constraintStart_toStartOf="parent"/>
 
         <CheckBox
+            android:id="@+id/checkbox1"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/checkboxes"
+            app:layout_constraintStart_toStartOf="parent"
             android:text="@string/Instagram"/>
         <CheckBox
+            android:id="@+id/checkbox2"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/checkbox1"
+            app:layout_constraintStart_toStartOf="parent"
             android:text="@string/Facebook"/>
         <CheckBox
+            android:id="@+id/checkbox3"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/checkbox2"
+            app:layout_constraintStart_toStartOf="parent"
             android:text="@string/WebSurfing"/>
+
         <CheckBox
+            android:id="@+id/checkbox4"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/checkbox3"
+            app:layout_constraintStart_toStartOf="parent"
             android:text="@string/Youtube"/>
         <CheckBox
+            android:id="@+id/checkbox5"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/checkbox4"
+            app:layout_constraintStart_toStartOf="parent"
             android:text="@string/College"/>
         <CheckBox
+            android:id="@+id/checkbox6"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/checkbox5"
+            app:layout_constraintStart_toStartOf="parent"
             android:text="@string/Twitter"/>
         <CheckBox
             android:id="@+id/checkboxend"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/checkbox6"
+            app:layout_constraintStart_toStartOf="parent"
             android:text="@string/Others"/>
 
         <TextView
@@ -156,13 +180,16 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             app:layout_constraintTop_toBottomOf="@id/checkboxend"
+            app:layout_constraintStart_toStartOf="parent"
             android:text="@string/images"/>
         <GridLayout
+            android:id="@+id/grid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_margin="10dp"
-            app:layout_constraintTop_toBottomOf="@id/imagestart">
+            app:layout_constraintTop_toBottomOf="@id/imagestart"
+            app:layout_constraintStart_toStartOf="parent">
 
             <ImageView
                 android:id="@+id/dog"
@@ -177,7 +204,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/dog"
-                android:gravity="center"
                 android:text="@string/_1"
                 tools:ignore="VisualLintOverlap" />
 
@@ -206,6 +232,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/grid"
+            app:layout_constraintStart_toStartOf="parent"
             android:layout_margin="10dp">
             <RadioButton
                 android:layout_width="wrap_content"
@@ -219,6 +247,7 @@
         <CheckBox
             android:id="@+id/lastbutton"
             app:layout_constraintTop_toBottomOf="@id/radioone"
+            app:layout_constraintStart_toStartOf="parent"
             android:layout_margin="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -226,13 +255,15 @@
             tools:ignore="VisualLintLongText,VisualLintButtonSize"/>
         <Button
             app:layout_constraintTop_toBottomOf="@id/lastbutton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/submit"
             android:textSize="20sp"/>
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </ScrollView>
