@@ -8,7 +8,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -50,7 +49,7 @@ public class LoginPage extends AppCompatActivity {
                 else if (name.equals("Ajay") && Password.equals("Ajay12345"))
                 {
                     Toast.makeText(LoginPage.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                    Intent intent=new Intent(getApplicationContext(),Assignment_Scroll_View.class);
+                    Intent intent=new Intent(getApplicationContext(), HomePage.class);
                     startActivity(intent);
                 }
 
