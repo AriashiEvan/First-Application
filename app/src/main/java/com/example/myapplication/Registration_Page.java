@@ -52,6 +52,7 @@ public class Registration_Page extends AppCompatActivity {
                     Toast.makeText(Registration_Page.this, "Registration Successful!", Toast.LENGTH_SHORT).show();
                     Intent intent=new Intent(getApplicationContext(),LoginPage.class);
                     startActivity(intent);
+                    finish();
                 }
             }
         });
