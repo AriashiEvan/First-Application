@@ -107,7 +107,7 @@
             android:textSize="15sp"/>
 
         <Button
-            android:id="@+id/register"
+            android:id="@+id/registerreal"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -115,24 +115,13 @@
             app:layout_constraintTop_toBottomOf="@id/conditions"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias=".15"/>
-
-        <Button
-            android:id="@+id/login"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="@string/login"
-            app:layout_constraintTop_toBottomOf="@id/conditions"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias=".85"/>
+            app:layout_constraintHorizontal_bias=".5"/>
 
         <TextView
             android:id="@+id/options"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/login"
+            app:layout_constraintTop_toBottomOf="@id/registerreal"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="20dp"
