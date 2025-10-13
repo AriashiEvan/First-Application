@@ -60,19 +60,6 @@
             app:layout_constraintTop_toBottomOf="@id/inputfield1"
             app:layout_constraintStart_toStartOf="parent"/>
 
-        <CheckBox
-            android:id="@+id/conditions"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:text="@string/TermsConditions"
-            app:layout_constraintTop_toBottomOf="@id/inputfield2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.1"
-            android:layout_marginTop="40dp"
-            android:layout_marginHorizontal="5dp"
-            android:textSize="15sp"/>
 
         <Button
             android:id="@+id/register"
@@ -80,7 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="@string/register"
-            app:layout_constraintTop_toBottomOf="@id/conditions"
+            app:layout_constraintTop_toBottomOf="@id/inputfield2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias=".15"/>
@@ -91,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="@string/login"
-            app:layout_constraintTop_toBottomOf="@id/conditions"
+            app:layout_constraintTop_toBottomOf="@id/inputfield2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias=".85"/>
@@ -103,7 +90,7 @@
             app:layout_constraintTop_toBottomOf="@id/login"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="50dp"
             android:textSize="20sp"
             android:text="Or Login With"
             tools:ignore="HardcodedText"/>
