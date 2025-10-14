@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -42,12 +43,18 @@ public class LoginPage extends AppCompatActivity {
                 String name=inputfield1.getText().toString();
                 String Password=inputfield2.getText().toString();
 
+                SharedPreferences sharedPreferences=getSharedPreferences("MySharedPref",MODE_PRIVATE);
+                SharedPreferences.Editor editor=sharedPreferences.edit();
+
                 if (name.isEmpty() || Password.isEmpty())
                 {
                     Toast.makeText(LoginPage.this, "Please enter Name and Password", Toast.LENGTH_SHORT).show();
                 }
                 else if (name.equals("Ajay") && Password.equals("Ajay12345"))
                 {
+                    editor.putString("LoginStatus","true");
+                    editor.apply();
+
                     Toast.makeText(LoginPage.this, "Login Successful", Toast.LENGTH_SHORT).show();
                     Intent intent=new Intent(getApplicationContext(), HomePage.class);
                     startActivity(intent);
