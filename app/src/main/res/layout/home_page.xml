@@ -254,6 +254,7 @@
             android:text="@string/Conditions"
             tools:ignore="VisualLintLongText,VisualLintButtonSize"/>
         <Button
+            android:id="@+id/submitbuttonhome"
             app:layout_constraintTop_toBottomOf="@id/lastbutton"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
