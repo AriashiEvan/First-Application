@@ -36,4 +36,6 @@
     <string name="full_name">Full Name</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="Ajay">Ajay</string>
+    <string name="popup">popup</string>
+    <string name="Popupdialogue">This is an example of pop-up dialogue</string>
 </resources>
