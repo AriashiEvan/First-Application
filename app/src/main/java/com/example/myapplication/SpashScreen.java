@@ -26,7 +26,7 @@ public class SpashScreen extends AppCompatActivity {
                 String loginstatus=sharedPreferences.getString("LoginStatus","");
                 if (loginstatus.equals("true")) {
 
-                    Intent intent=new Intent(getApplicationContext(),Popup.class);
+                    Intent intent=new Intent(getApplicationContext(),Calender.class);
                     startActivity(intent);
                     finish();
                 }

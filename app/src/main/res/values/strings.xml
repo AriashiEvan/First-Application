@@ -38,4 +38,5 @@
     <string name="Ajay">Ajay</string>
     <string name="popup">popup</string>
     <string name="Popupdialogue">This is an example of pop-up dialogue</string>
+    <string name="viewcalender">ViewCalender</string>
 </resources>
