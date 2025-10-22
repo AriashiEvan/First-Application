@@ -22,7 +22,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater=LayoutInflater.from(parent.getContext());
-        View listItem=layoutInflater.inflate(R.layout.rv_list_item,parent,false);
+        View listItem=layoutInflater.inflate(R.layout.rv_list_item1,parent,false);
         ViewHolder viewHolder=new ViewHolder(listItem);
         return viewHolder;
     }

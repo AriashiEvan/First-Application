@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -25,14 +25,22 @@ public class RecyclerViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recycler_view);
         recyclerView=findViewById(R.id.rvlist);
         myListData = new ArrayList<>();
-        myListData.add(new MyListData("Apple","Apple a day keeps the doctor away",R.drawable.dog));
-        myListData.add(new MyListData("Mango","My favourite",R.drawable.cat));
-        myListData.add(new MyListData("StrawBerry","Works well with milkshare",R.drawable.google));
-        myListData.add(new MyListData("Jackfruit","Not a huge fan",R.drawable.facebook));
-
+        myListData.add(new MyListData("Elon Musk","CEO of Tesla and X",R.drawable.elon_musk));
+        myListData.add(new MyListData("Sundar Pichai","CEO of Google",R.drawable.sundar_pichai));
+        myListData.add(new MyListData("Mark Zuckerberg","CEO of Facebook",R.drawable.mark_zuckerberg));
+        myListData.add(new MyListData("Alan Turing","Invented Turing Test",R.drawable.alan_turing));
+        myListData.add(new MyListData("Thomas Alva Edison","Inventor of Electric Bulb",R.drawable.thomas_edison));
+        myListData.add(new MyListData("Tim Cook","CEO of MacBook",R.drawable.tim_cook));
+        myListData.add(new MyListData("Stephen Hawking","English theoretical physicist and cosmologist",R.drawable.stephen_hawking));
+        myListData.add(new MyListData("A.P.J.Abdul Kalam","Scientist and former President of India",R.drawable.abdul_kalam));
+        myListData.add(new MyListData("Donald Trump","45th and 47th U.S. President",R.drawable.donald_trump));
+        myListData.add(new MyListData("Steve Jobs","Former CEO of Apple",R.drawable.steve_jobs));
+        myListData.add(new MyListData("J.K.Rowling","British author and philanthropist",R.drawable.rowling));
+        myListData.add(new MyListData("Ton Roosendaal","CEO of Blender",R.drawable.ton_roosendaal));
+        myListData.add(new MyListData("Satya Nadella","CEO of Microsoft",R.drawable.satya_nadella));
         RecyclerViewAdapter adapter=new RecyclerViewAdapter(myListData);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new GridLayoutManager(this, GridLayoutManager.chooseSize(2,2,2)));
         recyclerView.setAdapter(adapter);
 
 
